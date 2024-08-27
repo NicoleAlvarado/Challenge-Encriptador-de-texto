@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/Logo.png" alt="Logo" style="vertical-align:middle;margin:50px 0px"/>
+    </header>
+    <main class="presentacion">
+      <section class="input-text-section">
+        <textarea
+          id="input-text"
+          placeholder="Ingrese el texto aquí"
+          rows="4"
+          cols="50"
+        ></textarea>
+        <div class="warning">
+          <img src="./assets/Vector.png" alt="Vector" />
+          <span>Solo letras minúsculas y sin acento</span>
+        </div>
+
+        <div class="button">
+          <button class="encrypt" onclick="functionEncrypt()" type="button">
+            Encriptar
+          </button>
+          <button class="decrypt" onclick="functionDecrypt();" type="button">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+
+      <section class="output-text-section">
+        <div id="rectangle-icon-message">
+          <img src="./assets/imagenIzquierda.png" />
+        </div>
+
+        <div id="rectangle-output-text">
+          <textarea
+            id="output-text"
+            placeholder=""
+            rows="4"
+            cols="50"
+          ></textarea>
+          <div class="button">
+            <button class="copy" onclick="functionCopy();" type="button">
+              Copiar
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a>
+        <p>Nicole Alvarado Ramírez | Alura LATAM - ONE | 2024</p>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/nicole-alvarado-ram%C3%ADrez-005b40176/"
+        target="_blank"
+      >
+        <img class="icon" src="./assets/linkedin (1).png" />
+      </a>
+      <a href="https://www.instagram.com/nicoled_alvarado/" target="_blank">
+        <img class="icon" src="./assets/instagram.png" />
+      </a>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

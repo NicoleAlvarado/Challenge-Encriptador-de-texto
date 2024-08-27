@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --color-primario: #f3f5fc;
+  --color-secundario: #0a3871;
+  --color-terciario: #f3f5fc;
+  --color-hover: #adb5bd;
+
+  --fuente-inter: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+  font-family: var(--fuente-inter);
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  padding: 15px;
+  text-align: left;
+}
+
+.presentacion {
+  padding: 5% 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+textarea {
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.input-text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.output-text-section {
+  width: 100%;
+  max-width: 400px;
+}
+
+.rectangle-icon-message, .rectangle-output-text {
+  width: 200px;
+  text-align: center;
+}
+
+.warning {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.encrypt,
+.decrypt,
+.copy {
+  border-radius: 1.5rem;
+  padding: 10px 32px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.encrypt {
+  background-color: var(--color-secundario);
+  color: var(--color-terciario);
+  border: 2px solid var(--color-secundario);
+}
+
+.decrypt, .copy {
+  background-color: var(--color-terciario);
+  color: var(--color-secundario);
+  border: 2px solid var(--color-secundario);
+}
+
+.decrypt:hover, .copy:hover {
+  background-color: var(--color-hover);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.warning {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+footer {
+  color: var(--color-primario);
+  background-color: var(--color-secundario);
+  padding: 24px;
+  text-align: center;
+  /*position: absolute;*/
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media Queries */
+
+/* Tablets y Dispositivos Pequeños */
+/*@media (max-width: 768px) {
+  .presentacion {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .input-text-section, .rectangle-icon-message {
+    width: 100%;
+    text-align: center;
+  }
+
+  .output-text-section {
+    margin-top: 20px;
+  }
+}*/
+
+
